@@ -39,8 +39,8 @@ int main() {
         allsum = sum ;
     }
     printf( "Sum = %d\n", allsum ) ;
-    float avg = sum ;
-    avg /= input ;
+    float avg = sum / input ;
+
     printf ( "Avg = %1.2f", avg ) ;
     return 0 ;
 }
