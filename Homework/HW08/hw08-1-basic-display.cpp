@@ -21,3 +21,26 @@
         Avg = 39.67
 
 */
+
+#include<stdio.h>
+
+int main() {
+    int input ;
+    int inputvalue ;
+    float sum = 0 ;
+    int allsum = 0 ;
+    printf ( "Enter value n :\n" ) ;
+    scanf ( "%d", &input ) ;
+
+    for ( int i = 1 ; i <= input ; i++ ) {
+        printf ( "Enter number %d :\n", i ) ;
+        scanf ( "%d", &inputvalue ) ;
+        sum += inputvalue  ;
+        allsum = sum ;
+    }
+    printf( "Sum = %d\n", allsum ) ;
+    float avg = sum ;
+    avg /= input ;
+    printf ( "Avg = %1.2f", avg ) ;
+    return 0 ;
+}
